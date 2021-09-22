@@ -18,7 +18,7 @@ export default class CreateUser implements MigrationInterface {
             })
         )
         
-        await queryRunner.query("INSERT INTO users (email, name, password) VALUES ('admin@admin.com', 'admin', '$2a$08$cEAgfRVsbsawv/bC1t8Eb.r2ArFq3iNe2.mymFtQuGdb23cEOOeuG')")
+        await QueryRunner.query("INSERT INTO users (email, name, password) VALUES ('admin@admin.com', 'admin', '$2a$08$cEAgfRVsbsawv/bC1t8Eb.r2ArFq3iNe2.mymFtQuGdb23cEOOeuG')")
 
     }
     public async down(queryRunner: QueryRunner): Promise<void> {
