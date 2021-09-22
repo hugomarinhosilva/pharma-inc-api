@@ -1,24 +1,18 @@
 {
    "type": "mysql",
-   "host": "localhost",
+   "host": "192.168.50.6",
    "port": 3306,
-   "username": "test",
-   "password": "test",
-   "database": "test",
-   "synchronize": true,
-   "logging": false,
-   "entities": [
-      "src/entity/**/*.ts"
-   ],
-   "migrations": [
-      "src/migration/**/*.ts"
-   ],
-   "subscribers": [
-      "src/subscriber/**/*.ts"
-   ],
-   "cli": {
-      "entitiesDir": "src/entity",
-      "migrationsDir": "src/migration",
-      "subscribersDir": "src/subscriber"
+   "username": "root",
+   "password": "password",
+   "database": "laboratoryApi",
+   "entities": [ 
+       "./src/modules/*/entities/*.ts" 
+   ], 
+   "migrations": [ 
+       "./src/shared/database/migrations/*.ts"
+   ], 
+   "cli": { 
+       "entitiesDir": "./src/modules/*/entities", 
+       "migrationsDir": "./src/shared/database/migrations" 
    }
 }
