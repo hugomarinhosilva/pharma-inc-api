@@ -30,12 +30,14 @@
    "dependencies": {
       "ansi-regex": "^6.0.1",
       "celebrate": "^15.0.0",
+      "class-transformer": "^0.4.0",
       "cors": "^2.8.5",
       "express": "^4.17.1",
       "express-async-errors": "^3.1.1",
       "mysql": "^2.14.1",
       "reflect-metadata": "^0.1.10",
       "ts-node-dev": "^1.1.8",
+      "tsyringe": "^4.6.0",
       "typeorm": "0.2.37"
    }
 }
